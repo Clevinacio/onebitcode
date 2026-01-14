@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#setup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+#board span {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#board span:hover {
+    background-color: #e9ecef;
+}
+
+#board span.winner {
+    background-color: #28a745;
+    color: white;
+}
+
+.player-score {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+#result-message {
+    color: #d9534f;
+    font-size: 1.5rem;
+    height: 30px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila de espera</title>
+</head>
+<body>
+    <h1>Fila de espera Consultório</h1>
+    <p>Bem vindo a fila de espera. Abaixo estão os pacientes na fila:</p>
+    <div id="fila">
+        
+    </div>
+    <p id="fila-vazia" hidden>Fila vazia!</p>
+    <input type="text" id="novo-paciente" placeholder="Digite o nome do paciente">
+    <button id="adicionar-paciente" onclick="atualizarFila()">Adicionar Paciente</button>
+    <button id="consultar-paciente" hidden onclick="removerPaciente()">Consultar paciente</button>
+    <script src="script.js"></script>
+</body>
+</html>
