@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  margin: 0;
+  color: #222;
+}
+
+main {
+  display: flex;
+  gap: 4rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+
+form {
+  background: #f0f4f8;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form h2 {
+  margin-top: 0;
+  color: #2d7ff9;
+  font-size: 1.3rem;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+input, textarea {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #fff;
+  margin-bottom: 0.2rem;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #2d7ff9;
+  outline: none;
+}
+
+button {
+  background: #2d7ff9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1a5fd0;
+}
+
+#articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.article {
+  background: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  padding: 1.2rem 1rem;
+  border-left: 4px solid #2d7ff9;
+}
+
+.article-title {
+  margin: 0 0 0.5rem 0;
+  color: #2d7ff9;
+  font-size: 1.15rem;
+}
+
+.article-author {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.7rem;
+  font-style: italic;
+}
+
+.article-content {
+  font-size: 1rem;
+  color: #222;
+}

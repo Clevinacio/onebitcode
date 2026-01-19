@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "Olá, mundo!",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": "2",
+      "title": "Requisições POST com Javascript",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": "f2c8",
+      "title": "Novo artigo",
+      "author": "Cleverton",
+      "content": "Este é um novo artigo para teste"
+    },
+    {
+      "id": "4026",
+      "title": "As baleias de schrodinger",
+      "author": "Cleverton",
+      "content": "As baleias de schrodinger podem estar vivas ou não. Esse é o artigo."
+    },
+    {
+      "id": "0757",
+      "title": "teste",
+      "author": "teste",
+      "content": "teste"
+    }
+  ]
+}
