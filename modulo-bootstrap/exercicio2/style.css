@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #323232;
+  color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 4rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .125rem;
+}
+
+img {
+  aspect-ratio: 1/1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15rem;
+  /* height: 15rem;
+  width: 15rem; */
+  object-fit: cover;
+}
