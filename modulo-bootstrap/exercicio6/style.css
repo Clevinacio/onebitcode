@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-light: #e0e0e0;
+  --color-purple: #6c63ff;
+  --color-dark: #2c2c2e;
+  --color-black: #070707;
+
+  --color-primary: var(--color-purple);
+  --color-background: var(--color-light);
+  --color-foreground: var(--color-black);
+  --color-card-background: var(--color-white);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  line-height: 1.6;
+}
+
+.hero {
+  background-image:
+    linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("assets/pexels-bertellifotografia-3321797.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+  padding: 1.5rem;
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  place-content: center center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 0.3rem;
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #5e58e0;
+  cursor: pointer;
+}
+
+.speakers {
+  padding: 3rem 1.5rem;
+}
+
+.speakers h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.speaker-card {
+  background-color: var(--color-card-background);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.speaker-card img {
+  border-radius: 50%;
+  height: auto;
+  width: 100%;
+  max-width: 150px;
+}
+
+.speaker-card h3 {
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.schedule {
+  padding: 3rem 1.5rem;
+}
+
+.schedule h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.schedule-item {
+  background-color: var(--color-card-background);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.schedule-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-item p {
+  font-size: 0.75rem;
+}
+
+.newsletter {
+  padding: 3rem 1.5rem;
+}
+
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.newsletter-text {
+  text-align: center;
+}
+
+.newsletter-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-text p {
+  font-size: 1rem;
+  color: #888888;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  background-color: var(--color-card-background);
+  border: 1px solid #888888;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 32rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.newsletter-image {
+  text-align: center;
+}
+
+.newsletter-image img {
+  height: auto;
+  width: 75%;
+}
+
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #888888;
+}
+
+@media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .newsletter-text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero,
+  .speakers,
+  .schedule,
+  .newsletter {
+    padding: 6rem 4rem;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-dark);
+    --color-foreground: var(--color-light);
+    --color-card-background: var(--color-black);
+  }
+
+  .btn:hover {
+    background-color: #7a72ff;
+  }
+
+  .schedule-item p,
+  .footer p,
+  .newsletter-text p {
+    color: #bbbbbb;
+  }
+}
