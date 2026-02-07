@@ -6,24 +6,22 @@
   background-position: center;
 }
 
-.img-gradient-fg {
-  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-size: cover;
-  background-position: center;
-}
-
-.card-img-top {
-  width: 14rem;
-  height: 14rem;
-  margin: 1rem auto;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .bg-destinations-title {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/pexels-fabianwiktor-994605.webp");
   background-size: cover;
+  min-height: 32rem;
   background-position: center;
+}
+
+.card-testimonial {
+  width: 24rem;
+}
+
+.card-testimonial img {
+  width: 12rem;
+  height: 12rem;
+  margin-top: 1rem;
+  object-fit: cover;
 }
