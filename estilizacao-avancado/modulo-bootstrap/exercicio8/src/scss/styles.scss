@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+
+#newPostBtnInput {
+  cursor: pointer;
+}
+
+.btn-invisible {
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--#{$prefix}body-bg);
+  }
+}
